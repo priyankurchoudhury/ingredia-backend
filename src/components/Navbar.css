@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    border-bottom: 1px solid #e8e6df;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f6e56;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: #1d9e75;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .logo-icon::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    width: 13px;
+    height: 13px;
+    border: 2.5px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .nav-link {
+    color: #5f5e5a;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .nav-link:hover {
+    background: #f1efe8;
+  }
+  
+  .nav-user {
+    font-size: 13px;
+    color: #888780;
+  }
+  
+  .nav-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .login-btn {
+    color: #0f6e56;
+    background: none;
+    border: 1px solid #d3d1c7;
+  }
+  
+  .login-btn:hover {
+    background: #f1efe8;
+  }
+  
+  .signup-btn {
+    color: #fff;
+    background: #0f6e56;
+  }
+  
+  .signup-btn:hover {
+    background: #085041;
+  }
+  
+  .logout-btn {
+    color: #993c1d;
+    background: none;
+    border: 1px solid #d3d1c7;
+  }
+  
+  .logout-btn:hover {
+    background: #faece7;
+  }

@@ -1,0 +1,159 @@
+.recipe-card {
+    border: 1px solid #e8e6df;
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    background: #fff;
+    transition: border-color 0.2s;
+  }
+  
+  .recipe-card:hover {
+    border-color: #d3d1c7;
+  }
+  
+  .recipe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2c2c2a;
+    margin: 0;
+  }
+  
+  .match-note {
+    font-size: 12px;
+    color: #0f6e56;
+    font-style: italic;
+    margin: 4px 0 0;
+  }
+  
+  .heart-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #b4b2a9;
+    padding: 0;
+    line-height: 1;
+    transition: transform 0.15s;
+  }
+  
+  .heart-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .heart-btn.liked {
+    color: #e24b4a;
+  }
+  
+  .recipe-stats {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .stat {
+    font-size: 13px;
+    color: #888780;
+  }
+  
+  .stat strong {
+    color: #2c2c2a;
+    font-weight: 500;
+  }
+  
+  .recipe-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-tag {
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    background: #f1efe8;
+    color: #5f5e5a;
+  }
+  
+  .expand-btn {
+    background: none;
+    border: none;
+    color: #0f6e56;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 0;
+    font-family: inherit;
+  }
+  
+  .expand-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .recipe-details {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e8e6df;
+  }
+  
+  .nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .nut-box {
+    background: #f7f6f3;
+    border-radius: 10px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  
+  .nut-val {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c2c2a;
+  }
+  
+  .nut-label {
+    font-size: 11px;
+    color: #888780;
+    margin-top: 2px;
+  }
+  
+  .detail-heading {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c2c2a;
+    margin: 16px 0 8px;
+  }
+  
+  .detail-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .detail-list li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #444441;
+    border-bottom: 1px solid #f1efe8;
+  }
+  
+  .steps-list {
+    padding-left: 20px;
+  }
+  
+  .steps-list li {
+    padding: 6px 0;
+    font-size: 14px;
+    color: #444441;
+    line-height: 1.6;
+  }

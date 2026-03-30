@@ -1,0 +1,275 @@
+.ingredient-input {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px 20px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c2c2a;
+    margin-bottom: 4px;
+  }
+  
+  .hero-subtitle {
+    font-size: 15px;
+    color: #888780;
+    margin-bottom: 24px;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    min-height: 28px;
+  }
+  
+  .ingredient-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    background: #e1f5ee;
+    color: #085041;
+  }
+  
+  .tag-remove {
+    background: none;
+    border: none;
+    color: #085041;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.6;
+    padding: 0;
+    line-height: 1;
+  }
+  
+  .tag-remove:hover {
+    opacity: 1;
+  }
+  
+  .input-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+  
+  /* ─── Autocomplete wrapper ─── */
+  .autocomplete-wrapper {
+    flex: 1;
+    position: relative;
+    min-width: 0;
+  }
+  
+  .ingredient-field {
+    width: 90%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #d3d1c7;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+    background: #fff;
+  }
+  
+  .ingredient-field:focus {
+    border-color: #1d9e75;
+  }
+  
+  /* ─── Dropdown ─── */
+  .autocomplete-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e8e6df;
+    border-radius: 12px;
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 500;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    animation: dropIn 0.12s ease;
+  }
+  
+  @keyframes dropIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .autocomplete-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  
+  .autocomplete-item:first-child {
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .autocomplete-item:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .autocomplete-item:only-child {
+    border-radius: 12px;
+  }
+  
+  .autocomplete-item:hover,
+  .autocomplete-item.highlighted {
+    background: #e1f5ee;
+  }
+  
+  .autocomplete-name {
+    font-size: 14px;
+    color: #2c2c2a;
+    font-weight: 500;
+  }
+  
+  .autocomplete-category {
+    font-size: 11px;
+    color: #888780;
+    background: #f1efe8;
+    padding: 2px 8px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+  
+  /* ─── Loading spinner inside input ─── */
+  .autocomplete-loading {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .mini-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #e8e6df;
+    border-top-color: #1d9e75;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* ─── Rest of existing styles ─── */
+  .add-btn {
+    height: 44px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    background: #1d9e75;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    flex-shrink: 0;
+  }
+  
+  .add-btn:hover {
+    background: #0f6e56;
+  }
+  
+  .preference-section {
+    margin-bottom: 16px;
+  }
+  
+  .pref-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5f5e5a;
+    margin-bottom: 6px;
+  }
+  
+  .pref-textarea {
+    width: 95%;
+    min-height: 72px;
+    padding: 12px 14px;
+    border: 1px solid #d3d1c7;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    line-height: 1.5;
+    transition: border-color 0.2s;
+  }
+  
+  .pref-textarea:focus {
+    border-color: #1d9e75;
+  }
+  
+  .quick-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .quick-tag {
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    border: 1px solid #d3d1c7;
+    background: #fff;
+    color: #5f5e5a;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  
+  .quick-tag:hover {
+    border-color: #1d9e75;
+    color: #085041;
+  }
+  
+  .quick-tag.selected {
+    background: #e1f5ee;
+    border-color: #1d9e75;
+    color: #085041;
+  }
+  
+  .cook-btn {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    background: #0f6e56;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 8px;
+    transition: background 0.2s;
+  }
+  
+  .cook-btn:hover:not(:disabled) {
+    background: #085041;
+  }
+  
+  .cook-btn:disabled {
+    background: #b4b2a9;
+    cursor: not-allowed;
+  }

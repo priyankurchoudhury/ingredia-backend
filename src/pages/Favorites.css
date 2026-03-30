@@ -1,0 +1,55 @@
+.favorites-page {
+    min-height: calc(100vh - 60px);
+    background: #fafaf7;
+    padding: 32px 20px;
+  }
+  
+  .favorites-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .favorites-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2c2c2a;
+    margin-bottom: 20px;
+  }
+  
+  .favorites-loading {
+    color: #888780;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .empty-state h2 {
+    font-size: 20px;
+    color: #2c2c2a;
+    margin-bottom: 8px;
+  }
+  
+  .empty-state p {
+    color: #888780;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .empty-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #0f6e56;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .empty-btn:hover {
+    background: #085041;
+  }

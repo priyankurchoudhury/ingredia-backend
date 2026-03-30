@@ -1,0 +1,138 @@
+.auth-page {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafaf7;
+    padding: 40px 20px;
+  }
+  
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e8e6df;
+    padding: 36px 32px;
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .auth-logo-icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background: #1d9e75;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .auth-logo-icon::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .auth-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c2c2a;
+    margin: 0 0 4px;
+  }
+  
+  .auth-subtitle {
+    font-size: 14px;
+    color: #888780;
+    margin: 0;
+  }
+  
+  .auth-error {
+    background: #fcebeb;
+    color: #a32d2d;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .form-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #5f5e5a;
+  }
+  
+  .form-input {
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #d3d1c7;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .form-input:focus {
+    border-color: #1d9e75;
+  }
+  
+  .auth-submit {
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    background: #0f6e56;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 4px;
+    transition: background 0.2s;
+  }
+  
+  .auth-submit:hover:not(:disabled) {
+    background: #085041;
+  }
+  
+  .auth-submit:disabled {
+    background: #b4b2a9;
+    cursor: not-allowed;
+  }
+  
+  .auth-switch {
+    text-align: center;
+    font-size: 13px;
+    color: #888780;
+    margin-top: 20px;
+  }
+  
+  .auth-switch a {
+    color: #0f6e56;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .auth-switch a:hover {
+    text-decoration: underline;
+  }
